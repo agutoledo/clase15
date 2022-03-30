@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200&family=Fraunces:wght@600&display=swap');
+
+/* font-family: 'Commissioner', sans-serif;
+font-family: 'Fraunces', serif;
+*/
+        .container{
+            padding: 10px;
+            border: solid 1px black;
+            background-color: black;
+            display:flex;
+        }
+
+        .box{
+            padding: 20px;
+            text-align: center;
+            color: whitesmoke;
+            font-size: 3em;
+            font-family: 'Commissioner', sans-serif;
+        }
+
+        h3{
+            font-family: 'Fraunces', serif;
+        }
+
+  /* clases para width */
+
+        .w-25{
+            width: 25%;
+        }
+
+        .w-50{
+            width: 50%;
+        }
+
+        .w-75{
+            width: 75%;
+        }
+
+  /* clases para el height */
+
+        .h-25{
+            height: 25%;
+        }
+
+        .h-300{
+            height: 300px;
+        }
+
+
+  /* fondos colores */
+
+        .bg-red{
+            background-color: red;
+        }
+
+        .bg-grey{
+            background-color: grey;
+        }
+
+        .bg-yellow{
+            background-color: yellow;
+        }
+
+        .bg-blue{
+            background-color: blue;
+        }
+
+        .bg-green{
+            background-color: green;
+        }
+
+    /* Flex */
+    /* propiedades para los padres */
+
+        .flex-direction{
+            flex-direction: row-reverse; /* por default es row */
+        }
+
+        .flex-wrap{
+            flex-wrap: wrap;  /* por default es nowrap */
+        }
+
+        .flex-flow{
+            flex-flow: row-reverse wrap-reverse;
+        }
+
+        .justify-content{
+            justify-content: space-between;
+            /* 
+            flex-start por default, es a la izquierda
+            flex-end a la derecha
+            space-between: espacio entre todos
+            space-around: espacio entre todos y la mitad del espacio entre el primero y el último con los bordes
+            space-evenly: igual espacio entre todos y entre los bordes con el primero y el último
+            */
+        }
+
+        .align-items{
+            align-items: center ;
+            /* baseline los alinea con respecto a los renglones de textos*/
+        }
+
+        .align-content{ /* este es para cuando hay más de una
+                        línea con contenido que tengo q alinear */
+            align-content: center;
+        }
+
+    /* --------------------------------------------*/
+    /* propiedads para los hijos */
+
+        /* flow grow es cuanto crecen los hijos */ 
+
+        .flex-grow1{
+            flex-grow: 1;
+        }
+
+        .flex-grow2{
+            flex-grow: 2;
+        }
+
+        .flex-grow3{
+            flex-grow: 3;
+        }
+
+
+        .order1{
+            order: 1;
+        }
+
+        .order2{
+            order: 2;
+        }
+
+        .order3{
+            order: 3;
+        }
+
+        .order4{
+            order: 4;
+        }
+
+        .order5{
+            order: 5;
+        }
+
+        .align-self{
+            align-self: flex-end;
+            /* sirve para que un elemento se comporte
+            diferente a sus hermanos */
+        }
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Commissioner', sans-serif;
+
+}
+
