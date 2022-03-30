@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <title>Flexbox</title>
+</head>
+<body>
+
+    <section>
+        <h3>Flex Direction</h3>
+        <p>row / row-reverse / column / column-reverse </p>
+        <div class="container flex-direction">
+            <div class="box bg-red">1</div>
+            <div class="box bg-grey">2</div>
+            <div class="box bg-yellow">3</div>
+            <div class="box bg-blue">4</div>
+            <div class="box bg-green">5</div>
+        </div>
+
+        <h3>Flex wrap</h3>
+        <p>nowrap / wrap / wrap-reverse</p>
+        <div class="container flex-wrap">
+            <div class="box bg-red w-25">1</div>
+            <div class="box bg-grey w-25">2</div>
+            <div class="box bg-yellow w-25">3</div>
+            <div class="box bg-blue w-75">4</div>
+            <div class="box bg-green w-50">5</div>
+        </div>
+
+        <h3>Flex flow (shorthand)</h3>
+        <p>Definimos flex-direction / flex-wrap en la misma línea </p>
+        <div class="container flex-flow">
+            <div class="box bg-red w-25">1</div>
+            <div class="box bg-grey w-75">2</div>
+            <div class="box bg-yellow w-50">3</div>
+            <div class="box bg-blue w-25">4</div>
+            <div class="box bg-green w-25">5</div>
+        </div>
+
+        <h3>Justify content</h3>
+        <p>flex-star / flex-end / center / space-between /
+            space-around / space-evenly </p>
+        <div class="container justify-content">
+            <div class="box bg-red">1</div>
+            <div class="box bg-grey">2</div>
+            <div class="box bg-yellow">3</div>
+            <div class="box bg-blue">4</div>
+            <div class="box bg-green">5</div>
+        </div>
+
+        <h3>Align items</h3>
+        <p>flex-star / flex-end / center /
+                stretch / baseline </p>
+        <div class="container align-items justify-content h-300">
+            <!-- necesita saber un alto para saber como alinearse -->
+            <div class="box bg-red h-25">1</div>
+            <div class="box bg-grey h-25">2</div>
+            <div class="box bg-yellow h-25">3</div>
+            <div class="box bg-blue h-25">4</div>
+            <div class="box bg-green h-25">5</div>
+        </div>
+
+        <h3>Align content</h3>
+        <p> flex-star / flex-end / center / 
+        stretch / space-between / space-around </p>
+        <div class="container align-icontent justify-content flex-wrap h-300">
+            <!-- necesita saber un ancho para saber como alinear el contenido -->
+            <div class="box bg-red w-25">1</div>
+            <div class="box bg-grey w-25">2</div>
+            <div class="box bg-yellow w-25">3</div>
+            <div class="box bg-blue w-25">4</div>
+            <div class="box bg-green w-25">5</div>
+        </div>
+
+        <h3>PROPIEDADES PARA LOS FLEX ITEMS(HIJOS)</h3>
+        <div class="container">
+            <div class="box bg-red flex-grow1">1</div>
+            <div class="box bg-grey flex-grow2">2</div>
+            <div class="box bg-yellow flex-grow3">3</div>
+        </div>
+
+        <h3> Order </h3>
+        <div class="container">
+            <div class="box bg-red order5">1</div>
+            <div class="box bg-grey order2">2</div>
+            <div class="box bg-yellow order3">3</div>
+            <div class="box bg-blue order1">4</div>
+            <div class="box bg-green order4">5</div>
+        </div>
+
+        <h3> Align Self </h3>
+        <div class="container align-items h-300">
+            <div class="box bg-red">1</div>
+            <div class="box bg-grey">2</div>
+            <div class="box bg-yellow">3</div>
+            <div class="box bg-blue">4</div>
+            <div class="box bg-green align-self">5</div>
+        </div>
+
+    </section>
+
+</body>
+</html>
